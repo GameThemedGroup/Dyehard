@@ -3,6 +3,7 @@ import java.awt.image.BufferedImage;
 
 import Engine.BaseCode;
 import Engine.Vector2;
+import dyehard.Player.Hero;
 
 // TODO: Auto-generated Javadoc
 /**
@@ -24,7 +25,7 @@ public class StudentObj {
     
     /** The color. */
     private Color color;
-
+    
     /**
      * Instantiates a new student obj.
      */
@@ -33,14 +34,16 @@ public class StudentObj {
         height = 5f;
         width = 5f;
         texture = BaseCode.resources.loadImage("Beak.png");
+        System.out.println("Constructor called");
     }
 
     /**
-     * Instantiates a new student obj.
+     * StudentObj
+     * @purpose	Instantiates a new student object.
      *
-     * @param c the center
-     * @param w the width
-     * @param h the height
+     * @param 	c, the center
+     * @param 	w, the width
+     * @param 	h, the height
      */
     public StudentObj(Vector2 c, float w, float h) {
         center = c;

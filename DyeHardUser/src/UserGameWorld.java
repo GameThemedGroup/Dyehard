@@ -50,6 +50,7 @@ public class UserGameWorld implements Updateable {
         hero.drawOnTop();
 
         ui = new DyehardUI(hero);
+        ui.useUIdefaultSetting();;		//	Added by Nin
         menu = new DyehardMenuUI();
         endMenu = new DyehardEndMenu();
         start = new LogScreen();
